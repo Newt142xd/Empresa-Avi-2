@@ -1,6 +1,7 @@
 import React from "react";
 import "./Menu.css";
 import logo from "../assets/St rboy.png"; // Importa el logo desde su ruta
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -13,13 +14,13 @@ const Menu = () => {
 
       <ul className="menu-items">
         <li>
-          <a href="/">Inicio</a>
+          <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-          <a href="/">Tienda</a>
+          <NavLink to="/tienda">Tienda</NavLink>
         </li>
         <li>
-          <a href="/">Contacto</a>
+          <NavLink to="/">Contacto</NavLink>
         </li>
       </ul>
       <a href="/" className="Button1">

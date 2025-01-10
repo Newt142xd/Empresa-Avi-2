@@ -16,6 +16,75 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Product.css */
+.product-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.1);
+}
+
+.product-info {
+  padding: 16px;
+  text-align: center;
+}
+
+.video-texto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si la pantalla es pequeña */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo del texto */
+.texto {
+  max-width: 400px;
+  text-align: center;
+}
+
+.texto h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.texto p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Estilo del video */
+.video {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%; /* Hace el video circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega un efecto de sombra */
+}
+
+.video-circular {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video para que ocupe el espacio del círculo */
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

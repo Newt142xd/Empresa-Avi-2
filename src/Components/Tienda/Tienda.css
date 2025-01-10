@@ -1,0 +1,94 @@
+nav {
+  display: grid;
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
+  height: 100px; /* Ajusta según el diseño */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  display: block;
+
+  text-decoration: none;
+  padding: -10px 15px; /* Reducimos el padding */
+  color: #000000;
+  align-items: center;
+
+  transition: background-color 0.3s;
+}
+
+.Button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-weight: 750;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: rgba(255, 255, 255, 0.795);
+  margin-inline-start: 15rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10rem;
+  background-color: rgba(209, 129, 140, 0.952);
+  border: 2px solid #000000; /* Grosor, estilo y color */
+}
+
+.Button1:hover {
+  background-color: #5c0202;
+}
+
+.Button2 {
+  display: grid;
+  padding: 10px 15px;
+  font-weight: 750;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.795);
+  text-decoration: none;
+  border-radius: 10rem;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(209, 129, 140, 0.952);
+  border: 2px solid #000000; /* Grosor, estilo y color */
+}
+
+.Button2:hover {
+  background-color: #5c0202;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Fondo claro */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos del logo */
+.menu-logo img {
+  max-width: 7rem; /* El logo no será más ancho que 100px */
+  height: auto; /* Mantiene la proporción */
+}
+
+/* Estilos de los elementos del menú */
+.menu-items {
+  display: flex;
+  list-style: none; /* Quita los puntos de la lista */
+  margin: 0;
+  margin-left: 20rem;
+  padding: 0;
+  gap: 30px; /* Espaciado entre elementos */
+}
